@@ -5,6 +5,12 @@ public class OnboardingItem {
     private String title;
     private String description;
 
+    /** NIM   : 10119231
+     * Nama   : Muhamad Zulhaqi
+     * Kelas  : IF-6
+     * Tanggal Pengerjaan : 05-05-2022
+     */
+
     public int getImage() {
         return image;
     }

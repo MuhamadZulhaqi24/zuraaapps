@@ -12,6 +12,11 @@ import com.html.zuraaapps.databinding.ActivityMainBinding;
 
 import java.util.Objects;
 
+/** NIM   : 10119231
+ * Nama   : Muhamad Zulhaqi
+ * Kelas  : IF-6
+ * Tanggal Pengerjaan : 07-05-2022
+ */
 public class HomeActivity extends AppCompatActivity {
 
    ActivityMainBinding binding;

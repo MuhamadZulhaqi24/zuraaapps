@@ -11,6 +11,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Objects;
 
+/** NIM   : 10119231
+ * Nama   : Muhamad Zulhaqi
+ * Kelas  : IF-6
+ * Tanggal Pengerjaan : 09-05-2022
+ */
+
 public class Daily extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;

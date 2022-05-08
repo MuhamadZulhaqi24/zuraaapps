@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+/** NIM   : 10119231
+ * Nama   : Muhamad Zulhaqi
+ * Kelas  : IF-6
+ * Tanggal Pengerjaan : 04-05-2022
+ */
+
 public class MainActivity extends AppCompatActivity {
     Handler mHandler;
     Runnable mRunnable;

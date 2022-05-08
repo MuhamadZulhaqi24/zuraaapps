@@ -11,6 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/** NIM   : 10119231
+ * Nama   : Muhamad Zulhaqi
+ * Kelas  : IF-6
+ * Tanggal Pengerjaan : 06-05-2022
+ */
+
 public class OnboardingAdapter extends RecyclerView.Adapter<OnboardingAdapter.OnboardingViewHolder> {
 
     private List<OnboardingItem> onboardingItems;

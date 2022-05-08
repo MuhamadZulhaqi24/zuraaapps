@@ -9,6 +9,12 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+/** NIM   : 10119231
+ * Nama   : Muhamad Zulhaqi
+ * Kelas  : IF-6
+ * Tanggal Pengerjaan : 08-05-2022
+ */
+
 public class GalleryAdapt extends RecyclerView.Adapter<GalleryAdapt.ViewHolder> {
 
     Context context;
