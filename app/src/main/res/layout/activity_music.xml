@@ -98,8 +98,120 @@
             android:overScrollMode="never"
             android:scrollbars="none"
             app:layout_constraintBottom_toTopOf="@id/viewDivider"
-            app:layout_constraintTop_toBottomOf="@+id/layoutHeader"/>
+            app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music_videos"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/song1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stereoHeart"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/favorite" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/video1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/song1"
+                    android:layout_marginTop="5dp"
+
+                    app:videoId="T3E9Wjbq44E"
+                    app:autoPlay="false"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/littleGrey"
+                    app:layout_constraintTop_toBottomOf="@id/video1" />
+
+                <TextView
+                    android:id="@+id/song2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/akumaNoKo"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/video1" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/video2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/song2"
+                    android:layout_marginTop="5dp"
+                    app:videoId="WPl10ZrhCtk"
+                    app:autoPlay="false"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/littleGrey"
+                    app:layout_constraintTop_toBottomOf="@id/video2" />
+
+                <TextView
+                    android:id="@+id/song3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eve"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/video2" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/video3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/song3"
+                    android:layout_marginTop="5dp"
+                    app:videoId="nROvY9uiYYk"
+                    app:autoPlay="false"/>
+
+                <View
+                    android:id="@+id/last"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/littleGrey"
+                    app:layout_constraintTop_toBottomOf="@id/video3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    app:layout_constraintTop_toBottomOf="@id/last"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
 
 
         <View
