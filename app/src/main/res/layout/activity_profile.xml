@@ -12,7 +12,9 @@
         android:overScrollMode="never"
         android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@id/viewDivider"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-91dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -37,17 +39,17 @@
                     android:layout_width="150dp"
                     android:layout_height="130dp"
                     android:layout_margin="8dp"
+                    android:background="@drawable/white_rectangle_background"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
                     android:src="@drawable/profile"
-                    android:background="@drawable/white_rectangle_background"
                     android:theme="@style/customCircleImageProfile" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/namaku"
                     android:textSize="24sp"
@@ -101,8 +103,8 @@
                     android:text="@string/facebook"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    app:layout_constraintTop_toBottomOf="@id/facesocial"
-                    app:layout_constraintStart_toStartOf="@id/facesocial" />
+                    app:layout_constraintStart_toStartOf="@id/facesocial"
+                    app:layout_constraintTop_toBottomOf="@id/facesocial" />
 
             </LinearLayout>
 
@@ -140,12 +142,59 @@
                     android:fontFamily="@font/montserrat_regular"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:textSize="11sp"
                     android:text="@string/gmail"
                     android:textColor="@color/white"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/find_me"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/facebook"
+                app:layout_constraintTop_toBottomOf="@id/facebook" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/location"
+                android:layout_width="360dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/location"
+                android:theme="@style/customBorderedImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/find"
+                app:strokeColor="@color/littleGrey"
+                app:strokeWidth="1dp" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/interest_background"
+                android:padding="8dp"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintTop_toBottomOf="@id/btnAbout" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
