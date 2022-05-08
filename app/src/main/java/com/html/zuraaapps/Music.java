@@ -23,7 +23,7 @@ public class Music extends AppCompatActivity {
 
 
         bottomNavigationView = findViewById(R.id.bottomNav);
-        bottomNavigationView.setSelectedItemId(R.id.menuHome); //sus
+        bottomNavigationView.setSelectedItemId(R.id.menuMusic); //sus
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -39,10 +39,12 @@ public class Music extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), Daily.class));
                         overridePendingTransition(0,0);
                         return true;
+
                     case R.id.menuGallery:
                         startActivity(new Intent(getApplicationContext(), Gallery.class));
                         overridePendingTransition(0,0);
                         return true;
+
                     case R.id.menuMusic:
                         return true;
 
