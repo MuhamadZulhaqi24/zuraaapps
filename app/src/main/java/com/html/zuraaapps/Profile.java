@@ -23,7 +23,7 @@ public class Profile extends AppCompatActivity {
 
 
         bottomNavigationView = findViewById(R.id.bottomNav);
-        bottomNavigationView.setSelectedItemId(R.id.menuHome); //sus
+        bottomNavigationView.setSelectedItemId(R.id.menuProfile); //sus
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -31,23 +31,26 @@ public class Profile extends AppCompatActivity {
                 switch (item.getItemId())
                 {
                     case R.id.menuHome:
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.menuActivity:
                         startActivity(new Intent(getApplicationContext(), Daily.class));
                         overridePendingTransition(0,0);
                         return true;
+
                     case R.id.menuGallery:
                         startActivity(new Intent(getApplicationContext(), Gallery.class));
                         overridePendingTransition(0,0);
                         return true;
+
                     case R.id.menuMusic:
                         startActivity(new Intent(getApplicationContext(), Music.class));
                         overridePendingTransition(0,0);
                         return true;
+
                     case R.id.menuProfile:
-                        startActivity(new Intent(getApplicationContext(), Profile.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;

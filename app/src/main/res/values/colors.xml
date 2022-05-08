@@ -18,4 +18,8 @@
     <color name="brightGrey">#C5C5C5</color>
     <color name="littleGrey">#EEEDE7</color>
     <color name="littleorange">#FFD580</color>
+    <color name="faceblue1">#001D6E</color>
+    <color name="faceblue2">#7FB5FF</color>
+    <color name="gmared1">#950101</color>
+    <color name="gmared2">#FF0000</color>
 </resources>
